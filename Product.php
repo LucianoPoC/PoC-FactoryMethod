@@ -6,6 +6,7 @@
  * Time: 09:43
  */
 
-interface Product {
-
+interface Product
+{
+    public function getProperties();
 }

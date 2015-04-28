@@ -6,6 +6,13 @@
  * Time: 09:43
  */
 
-abstract class Creator {
+require_once('Product.php');
 
+abstract class Creator
+{
+    abstract function factoryMethod(Product $productType);
+    public function doFactory(Product $productType)
+    {
+        return $this->factoryMethod($productType);
+    }
 }

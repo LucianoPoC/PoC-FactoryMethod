@@ -6,6 +6,15 @@
  * Time: 09:43
  */
 
-class ConcreteCreator {
+require_once('Creator.php');
+require_once('Product.php');
 
+class ConcreteCreator extends Creator
+{
+    private $product;
+    function factoryMethod(Product $productType)
+    {
+        $this->product = $productType;
+        return $this->product->getProperties();
+    }
 }
