@@ -1,4 +1,4 @@
-<?php
+<?php namespace App;
 /**
  * Created by PhpStorm.
  * User: luciano
@@ -10,7 +10,8 @@ require_once('ConcreteCreator.php');
 require_once('ProductGUI.php');
 require_once('ProductCLI.php');
 
-class Client {
+class Client
+{
     private $creator;
 
     /**
