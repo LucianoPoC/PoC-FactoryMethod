@@ -6,9 +6,6 @@
  * Time: 09:43
  */
 
-require_once('Creator.php');
-require_once('Product.php');
-
 class ConcreteCreator extends Creator
 {
     private $product;

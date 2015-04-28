@@ -6,9 +6,8 @@
  * Time: 09:45
  */
 
-require_once('Product.php');
-
-class ProductCLI implements Product{
+class ProductCLI implements Product
+{
 
     public function getProperties()
     {

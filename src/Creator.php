@@ -6,8 +6,6 @@
  * Time: 09:43
  */
 
-require_once('Product.php');
-
 abstract class Creator
 {
     abstract function factoryMethod(Product $productType);

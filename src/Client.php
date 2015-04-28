@@ -6,12 +6,7 @@
  * Time: 09:42
  */
 
-require_once('ConcreteCreator.php');
-require_once('ProductGUI.php');
-require_once('ProductCLI.php');
-
-class Client
-{
+class Client {
     private $creator;
 
     /**
@@ -24,4 +19,3 @@ class Client
     }
 
 }
-$worker = new Client();
